@@ -7,6 +7,6 @@ import java.util.Comparator;
 public class CompareCoffee implements Comparator<Coffee> {
 
     public int compare(Coffee ob1, Coffee ob2) {
-        return (int) (ob1.getCost() - ob2.getCost());
+        return (ob1.getCost()/ob1.getWeight() - ob2.getCost()/ob2.getWeight());
     }
 }

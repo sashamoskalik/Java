@@ -15,7 +15,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args){
-        Bus coffee = generateBus(200, 220);
+        Bus coffee = generateBus(132, 300);
         System.out.println(coffee);
 
 
@@ -43,14 +43,14 @@ public class Main {
         Bus coffee = new Bus();
         coffee.setBusCost(cost);
         coffee.setBusSize(size);
-        coffee.getCoffee().add(new ArabicBank("ArabicBank", 20,30, 40, 5 ));
-        coffee.getCoffee().add(new ArabicMolot("ArabicMolot", 30,40,30,3));
-        coffee.getCoffee().add(new ArabicGrain("ArabicGrain", 50,30,20,5));
+        coffee.getCoffee().add(new ArabicBank("ArabicBank", 20,30, 10, 5 ));
+        coffee.getCoffee().add(new ArabicGrain("ArabicGrain", 50,30,15,5));
+        coffee.getCoffee().add(new ArabicMolot("ArabicMolot", 30,40,4,3));
         coffee.getCoffee().add(new ArabicPackage("ArabicPackage", 10,40,20,4));
-        coffee.getCoffee().add(new RobustaBank("RobustaBank",30,50,30,3));
-        coffee.getCoffee().add(new RobustaGrain("RobustaGrain",20,30,20,4));
-        coffee.getCoffee().add(new RobustaMolot("RobustaMolot",10,30,20,5));
-        coffee.getCoffee().add(new RobustaPackage("RobustaPackage",20,50,30,4));
+        coffee.getCoffee().add(new RobustaBank("RobustaBank",30,50,50,3));
+        coffee.getCoffee().add(new RobustaGrain("RobustaGrain",20,30,3,4));
+        coffee.getCoffee().add(new RobustaMolot("RobustaMolot",10,30,15,5));
+        coffee.getCoffee().add(new RobustaPackage("RobustaPackage",20,50,25,4));
         return coffee;
     }
 
