@@ -6,9 +6,7 @@ import by.bsu.onedimensionalArray.Massiv.Massiv;
 import java.util.Arrays;
 
 public class OneDimensionalArray extends Massiv {
-    protected int[] res;
-
-    Massiv massiv = new Massiv();
+    private int[] res;
 
 
     public void sum(){
@@ -18,7 +16,6 @@ public class OneDimensionalArray extends Massiv {
             res[i] = array1[i] + array2[i];
             System.out.print(res[i] + " ");
         }
-        System.out.println("vnskdnvs" + getArray1());
         System.out.println(" ");
     }
 
@@ -48,9 +45,8 @@ public class OneDimensionalArray extends Massiv {
         this.res = res;
     }
 
-    public OneDimensionalArray(int[] array1, int[] array2, int[] res) {
-        super(array1, array2);
-        this.res = res;
+    public OneDimensionalArray(int[] array1, int[] array2) {
+       super(array1, array2);
     }
 
     public OneDimensionalArray(int n, int min, int max, int[] array1, int[] array2, int[] res) {
@@ -58,11 +54,16 @@ public class OneDimensionalArray extends Massiv {
         this.res = res;
     }
 
+    public OneDimensionalArray(){
+        super();
+    }
+
+
     public OneDimensionalArray(int[] res) {
         this.res = res;
     }
 
-    public OneDimensionalArray(){}
+
 
     @Override
     public boolean equals(Object o) {

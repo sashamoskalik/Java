@@ -6,8 +6,8 @@ import java.util.Arrays;
 import java.util.Objects;
 
 public class Massiv extends Element {
-    public int[] array1;
-    public int[] array2;
+    protected int[] array1;
+    protected int[] array2;
 
     public void showArray1() {
         array1 = new int[n];
@@ -27,6 +27,7 @@ public class Massiv extends Element {
             System.out.print(array2[i] + " ");
         }
         System.out.println(" ");
+        ;
     }
 
     /*public void sum(){
