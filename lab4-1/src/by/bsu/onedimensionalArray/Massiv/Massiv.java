@@ -30,34 +30,6 @@ public class Massiv extends Element {
         ;
     }
 
-    /*public void sum(){
-        res = new int[n];
-        System.out.print("Сумма массивов: ");
-        for (int i = 0; i<n; i++){
-            res[i] = array1[i] + array2[i];
-            System.out.print(res[i] + " ");
-        }
-        System.out.println(" ");
-    }
-
-    public void subtraction(){
-        System.out.print("Разность массивов: ");
-        for (int i = 0; i<n; i++){
-            res[i] = array1[i] - array2[i];
-            System.out.print(res[i] + " ");
-        }
-        System.out.println(" ");
-    }
-
-    public void multiplication(){
-        System.out.print("Произведение массивов: ");
-        for (int i = 0; i<n; i++){
-            res[i] = array1[i] * array2[i];
-            System.out.print(res[i] + " ");
-        }
-    }
-
-*/
 
     public Massiv(int[] array1, int[] array2) {
         this.array1 = array1;
